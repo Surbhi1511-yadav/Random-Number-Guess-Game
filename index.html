@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Guess Game</title>
+    <link rel="shortcut icon" href="./images/image1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main>
+        <!-- Welcome screen  -->
+
+        <div id="welcomeScreen">
+            <h2>Guess The Random Number Between 1 - 100</h2>
+            <img src="./images/image2.svg" alt="Game Logo">
+
+            <section class="eventSection">
+                <p>Select The Difficulty</p>
+                <div class="button-wrapper">
+                    <button>Easy : 10 attempts</button>
+                    <button>Hard : 5 attempts</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Actual Game Screen  -->
+
+        <div id="gameArea">
+            <div id="nameGameButton">
+                <button>New Game</button>
+            </div>
+
+            <section>
+                <h3>Your Guess</h3>
+                <input type="text" id="inputBox" min="1" max="100" placeholder="Enter Your Number"/>
+            </section>
+
+            <section class="stats">
+                <div class="info">
+                    <p>Number of previous attempts</p>
+                    <span id="attempts">0</span>
+                </div>
+                <div class="info">
+                    <p>Number of previous guesses</p>
+                    <span id="guesses">0</span>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

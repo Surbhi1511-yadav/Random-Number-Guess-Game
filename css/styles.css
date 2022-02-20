@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark:#350363;
+    --background:#ffe9db;
+}
+html{
+    /* font-size:62.5%; */
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #491579;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    width: 30vw;
+    /* height: 70vh; */
+    text-align: center;
+    background-color:var(--background);
+    border:solid var(--dark);
+    border-width: 0.8rem;
+    border-radius: 1rem;
+    padding: 80px 50px;
+    color: #1f2933;
+}
+h2{
+    font-size: 2.2rem;
+    margin: 2rem;
+}
+h3{
+    font-size: 3 rem;
+}
+p{
+    font-size: 1.8rem;
+}
+img{
+    width: 90%;
+    max-height: 22rem;
+    height: auto;
+    margin: 1rem 0 4rem 0;
+}
+
+/* For Resposiveness  */
