@@ -84,5 +84,21 @@ button:hover{
     align-items: center;
     justify-content: center;
 }
+#newGameButton button{
+    margin: 2rem 0;
+}
+input{
+    border: 0.1rem solid lightgray;
+    background: transparent;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+input::placeholder{
+    font-size: 24px;
+}
+
 
 /* For Resposiveness  */
