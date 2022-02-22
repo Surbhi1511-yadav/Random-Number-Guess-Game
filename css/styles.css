@@ -54,8 +54,8 @@ img{
 }
 button{
     min-width: 28rem;
-    background: linear-gradient(45deg, #80FFDB, #5390D9);
-    /* background: linear-gradient(92.88deg, #455eb5 9.16%, #5643cc 43.89%, #673fd7 64.72%); */
+    /* background: linear-gradient(45deg, #80FFDB, #5390D9); */
+    background: linear-gradient(92.88deg, #5c7cf0 9.16%, #8c7bfa 43.89%, #906bf7 64.72%);
     border-radius: 0.8rem;
     border-style: none;
     color: #ffffff;

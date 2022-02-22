@@ -18,6 +18,9 @@ const startGame = () => {
     document.getElementById("welcomeScreen").style.display = "none";
     document.getElementById("gameArea").style.display="block";
 }
+
+//main logic of your app : 
+
 const easyMode = () => {
     //MaxGuess in EasyMode should be 10
     maxGuess = 10;
