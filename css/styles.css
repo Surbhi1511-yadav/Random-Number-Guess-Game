@@ -23,6 +23,7 @@ body{
     margin: auto;
     align-items: center;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
 }
 main{
     width: 30vw;
@@ -94,11 +95,26 @@ input{
     padding: 2rem 0;
     width: 25rem;
     text-align: center;
+    font-size: 34px;
     font-family: "Josefin Sans", sans-serif;
 }
 input::placeholder{
     font-size: 24px;
 }
 
+.stats{
+    text-align: left;
+    margin-bottom: 4rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.info span{
+    font-size: 2rem;
+    color: #ff0511;
+}
 
 /* For Resposiveness  */
