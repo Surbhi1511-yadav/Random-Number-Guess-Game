@@ -16,7 +16,9 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    background-color: #491579;
+    background: linear-gradient(#80FFDB, #5390D9);
+    /* background: linear-gradient(#80FFDB, #64DFDF, #48BFE3, #5390D9, #5E60CE); */
+    /* background: linear-gradient(45deg, #80FFDB, #5390D9); */
     display: flex;
     margin: auto;
     align-items: center;
@@ -34,7 +36,7 @@ main{
     color: #1f2933;
 }
 h2{
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     margin: 2rem;
 }
 h3{
@@ -48,6 +50,39 @@ img{
     max-height: 22rem;
     height: auto;
     margin: 1rem 0 4rem 0;
+}
+button{
+    min-width: 28rem;
+    background: linear-gradient(45deg, #80FFDB, #5390D9);
+    /* background: linear-gradient(92.88deg, #455eb5 9.16%, #5643cc 43.89%, #673fd7 64.72%); */
+    border-radius: 0.8rem;
+    border-style: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 2.5rem 6rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: rgba(0,0,0,0.25) 0 3px 8px;
+    transition: all 0.5s;
+    user-select: none;
+    text-transform: capitalize;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+button:hover{
+    box-shadow: rgba(80,63,205,0.2) 0 1px 30px;
+    transition-duration: 0.1s;
+}
+
+
+/* Our GameArea Section  */
+#gameArea{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* For Resposiveness  */
