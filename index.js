@@ -19,9 +19,13 @@ const startGame = () => {
     document.getElementById("gameArea").style.display="block";
 }
 const easyMode = () => {
+    //MaxGuess in EasyMode should be 10
+    maxGuess = 10;
     startGame();
 };
 
 const hardMode = () => {
+    //MaxGuess in hardMode should be 5
+    maxGuess = 5;
     startGame();
 };
