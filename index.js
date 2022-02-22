@@ -16,7 +16,7 @@ const init = () => {
 //When we Go to the startGame screen the welcome screen must be hidden and the gamearea should be visible
 const startGame = () => {
     document.getElementById("welcomeScreen").style.display = "none";
-    document.getElementById("gameArea").style.display="display";
+    document.getElementById("gameArea").style.display="block";
 }
 const easyMode = () => {
     startGame();
