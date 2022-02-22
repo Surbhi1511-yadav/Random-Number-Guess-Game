@@ -4,7 +4,11 @@ let userGuess = []; //Empty array
 
 const init = () => {
     computerGuess = Math.floor(Math.random() * 100); //We are using *100 to get a number b/w 1-100 and math floor to remove the decimal value after *100
-    console.log(computerGuess);
+    // console.log(computerGuess);
+
+    //To remove the New Gmae button 
+    document.getElementById("nameGameButton").style.display="none";
+    document.getElementById("gameArea").style.display="none";
 };
 
 // init();  We will call this function onload so go to index file 
