@@ -24,7 +24,7 @@ const startGame = () => {
 const compareGuess = () => {
     const userNumber = Number(document.getElementById("inputBox").value);
     userGuess = [ ...userGuess, userNumber]; //userGuess for previous entered number and userNumber for recent entered number
-    document.getElementById("gusses").innerHTML = userGuess;
+    document.getElementById("guesses").innerHTML = userGuess;
     
     //Check the value is High or Low
     if(userNumber > computerGuess)
