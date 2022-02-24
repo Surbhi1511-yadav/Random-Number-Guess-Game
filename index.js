@@ -1,7 +1,8 @@
 //To generate a Random Number 
 let computerGuess;
 let userGuess = []; //Empty array
-let userNumberUpdate = document.getElementById("textOutput");
+let userGuessUpdate = document.getElementById("textOutput");
+let userNumberUpdate = document.getElementById("inputBox");
 
 const init = () => {
     computerGuess = Math.floor(Math.random() * 100); //We are using *100 to get a number b/w 1-100 and math floor to remove the decimal value after *100
@@ -29,13 +30,16 @@ const compareGuess = () => {
     //Check the value is High or Low
     if(userNumber > computerGuess)
     {
-        userNumberUpdate.innerHTML = "Your guess is High &#128558";
+        userGuessUpdate.innerHTML = "Your guess is High &#128558";
+        userNumberUpdate.value = "";
     }
     else if(userNumber < computerGuess){
-        userNumberUpdate.innerHTML = "Your guess is Low &#128542";
+        userGuessUpdate.innerHTML = "Your guess is Low &#128542";
+        userNumberUpdate.value = "";
     }
     else{
-        userNumberUpdate.innerHTML = "It's Correct &#128512 ";
+        userGuessUpdate.innerHTML = "It's Correct &#128512 ";
+        userNumberUpdate.value = "";
     }
 };
 
