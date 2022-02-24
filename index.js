@@ -20,6 +20,11 @@ const startGame = () => {
 }
 
 //main logic of your app : 
+const compareGuess = () => {
+    const userNumber = Number(document.getElementById("inputBox").value);
+    userGuess = [ ...userGuess, userNumber]; //userGuess for previous entered number and userNumber for recent entered number
+};
+
 
 const easyMode = () => {
     //MaxGuess in EasyMode should be 10
