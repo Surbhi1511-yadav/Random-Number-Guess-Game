@@ -24,6 +24,7 @@ const startGame = () => {
 // start new game
 const startNewGame = () =>{
     document.getElementById("nameGameButton").style.display="inline";
+    document.getElementById('textOutput').innerHTML.setAttribute("disabled",true);
 }
 
 //main logic of your app : 
