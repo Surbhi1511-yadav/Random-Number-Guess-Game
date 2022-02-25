@@ -1,8 +1,7 @@
 //To generate a Random Number 
 let computerGuess;
 let userGuess = []; //Empty array
-let userGuessUpdate = document.getElementById("textOutput");
-let userNumberUpdate = document.getElementById("inputBox");
+
 
 const init = () => {
     computerGuess = Math.floor(Math.random() * 100); //We are using *100 to get a number b/w 1-100 and math floor to remove the decimal value after *100
@@ -27,6 +26,7 @@ const compareGuess = () => {
     userGuess = [ ...userGuess, userNumber]; //userGuess for previous entered number and userNumber for recent entered number
     document.getElementById("guesses").innerHTML = userGuess;
     
+};
 
 
 const easyMode = () => {
