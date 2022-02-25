@@ -30,10 +30,13 @@ const compareGuess = () => {
     // Check the value low or high 
     if(userNumber > computerGuess){
         document.getElementById('textOutput').innerHTML = "Your guess is High &#128550";
+        document.getElementById('inputBox').value = "";
     }else if(userNumber < computerGuess){
         document.getElementById('textOutput').innerHTML = "Your guess is Low &#128532";
+        document.getElementById('inputBox').value = "";
     }else{
         document.getElementById('textOutput').innerHTML = "It's Correct &#128512";
+        document.getElementById('inputBox').value = "";
     }
 };
 
