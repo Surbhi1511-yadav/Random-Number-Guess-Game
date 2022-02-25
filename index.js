@@ -1,7 +1,6 @@
 //To generate a Random Number 
 let computerGuess;
 let userGuess = []; //Empty array
-let userNumberUpdate = document.getElementById("inputBox");
 
 
 const init = () => {
@@ -24,7 +23,7 @@ const startGame = () => {
 // start new game
 const startNewGame = () => {
     document.getElementById("nameGameButton").style.display = "inline";
-    userNumberUpdate.setAttribute("disabled", true);
+    document.getElementById("inputBox").disabled = "true";
 }
 
 //main logic of your app : 
