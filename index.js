@@ -1,7 +1,7 @@
 //To generate a Random Number 
 let computerGuess;
 let userGuess = []; //Empty array
-// let userNumberUpdate = document.getElementById('textOutput');
+let userNumberUpdate = document.getElementById("inputBox");
 
 
 const init = () => {
@@ -9,8 +9,8 @@ const init = () => {
     // console.log(computerGuess);
 
     //To remove the New Gmae button 
-    document.getElementById("nameGameButton").style.display="none";
-    document.getElementById("gameArea").style.display="none";
+    document.getElementById("nameGameButton").style.display = "none";
+    document.getElementById("gameArea").style.display = "none";
 };
 
 // init();  We will call this function onload so go to index file 
@@ -18,46 +18,46 @@ const init = () => {
 //When we Go to the startGame screen the welcome screen must be hidden and the gamearea should be visible
 const startGame = () => {
     document.getElementById("welcomeScreen").style.display = "none";
-    document.getElementById("gameArea").style.display="block";
+    document.getElementById("gameArea").style.display = "block";
 }
 
 // start new game
-const startNewGame = () =>{
-    document.getElementById("nameGameButton").style.display="inline";
-    document.getElementById('textOutput').innerHTML.setAttribute("disabled",true);
+const startNewGame = () => {
+    document.getElementById("nameGameButton").style.display = "inline";
+    userNumberUpdate.setAttribute("disabled", true);
 }
 
 //main logic of your app : 
 const compareGuess = () => {
     const userNumber = Number(document.getElementById("inputBox").value);
-    userGuess = [ ...userGuess, userNumber]; //userGuess for previous entered number and userNumber for recent entered number
+    userGuess = [...userGuess, userNumber]; //userGuess for previous entered number and userNumber for recent entered number
     document.getElementById("guesses").innerHTML = userGuess;
-    
+
     // Check the value low or high 
-    if(userGuess.length > maxGuess){
-    if(userNumber > computerGuess){
-        document.getElementById('textOutput').innerHTML = "Your guess is High &#128550";
-        document.getElementById('inputBox').value = "";
-    }else if(userNumber < computerGuess){
-        document.getElementById('textOutput').innerHTML = "Your guess is Low &#128532";
-        document.getElementById('inputBox').value = "";
-    }else{
-        document.getElementById('textOutput').innerHTML = "It's Correct &#128512";
-        document.getElementById('inputBox').value = "";
-        startNewGame();
-    }
+    if (userGuess.length < maxGuess) {
+        if (userNumber > computerGuess) {
+            document.getElementById('textOutput').innerHTML = "Your guess is High &#128550";
+            document.getElementById('inputBox').value = "";
+        } else if (userNumber < computerGuess) {
+            document.getElementById('textOutput').innerHTML = "Your guess is Low &#128532";
+            document.getElementById('inputBox').value = "";
+        } else {
+            document.getElementById('textOutput').innerHTML = "It's Correct &#128512";
+            document.getElementById('inputBox').value = "";
+            startNewGame();
+        }
     }
     //For last attempt 
-    else{
-        if(userNumber > computerGuess){
+    else {
+        if (userNumber > computerGuess) {
             document.getElementById('textOutput').innerHTML = `You Loose !!! Correct Number was ${computerGuess}`;
             document.getElementById('inputBox').value = "";
             startNewGame();
-        }else if(userNumber < computerGuess){
+        } else if (userNumber < computerGuess) {
             document.getElementById('textOutput').innerHTML = `You Loose !!! Correct Number was ${computerGuess}`;
             document.getElementById('inputBox').value = "";
             startNewGame();
-        }else{
+        } else {
             document.getElementById('textOutput').innerHTML = "It's Correct &#128512";
             document.getElementById('inputBox').value = "";
             startNewGame();

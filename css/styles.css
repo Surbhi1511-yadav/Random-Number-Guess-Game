@@ -82,7 +82,7 @@ button:last-child{
 
 /* Our GameArea Section  */
 #gameArea{
-    height: 40vh;
+    /* height: 40vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
