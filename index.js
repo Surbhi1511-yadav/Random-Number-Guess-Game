@@ -38,6 +38,8 @@ const compareGuess = () => {
         document.getElementById('textOutput').innerHTML = "It's Correct &#128512";
         document.getElementById('inputBox').value = "";
     }
+    //To tooglee the attempts 
+    document.getElementById('attempts').innerHTML = userGuess.length;
 };
 
 
