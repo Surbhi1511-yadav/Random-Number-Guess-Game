@@ -27,21 +27,6 @@ const compareGuess = () => {
     userGuess = [ ...userGuess, userNumber]; //userGuess for previous entered number and userNumber for recent entered number
     document.getElementById("guesses").innerHTML = userGuess;
     
-    //Check the value is High or Low
-    if(userNumber > computerGuess)
-    {
-        userGuessUpdate.innerHTML = "Your guess is High &#128558";
-        userNumberUpdate.value = "";
-    }
-    else if(userNumber < computerGuess){
-        userGuessUpdate.innerHTML = "Your guess is Low &#128542";
-        userNumberUpdate.value = "";
-    }
-    else{
-        userGuessUpdate.innerHTML = "It's Correct &#128512 ";
-        userNumberUpdate.value = "";
-    }
-};
 
 
 const easyMode = () => {
