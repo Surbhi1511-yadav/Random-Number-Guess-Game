@@ -38,6 +38,7 @@ const compareGuess = () => {
     }else{
         document.getElementById('textOutput').innerHTML = "It's Correct &#128512";
         document.getElementById('inputBox').value = "";
+        startNewGame();
     }
     }
     //For last attempt 
@@ -45,12 +46,15 @@ const compareGuess = () => {
         if(userNumber > computerGuess){
             document.getElementById('textOutput').innerHTML = `You Loose !!! Correct Number was ${computerGuess}`;
             document.getElementById('inputBox').value = "";
+            startNewGame();
         }else if(userNumber < computerGuess){
-            document.getElementById('textOutput').innerHTML = "Your guess is Low &#128532";
+            document.getElementById('textOutput').innerHTML = `You Loose !!! Correct Number was ${computerGuess}`;
             document.getElementById('inputBox').value = "";
+            startNewGame();
         }else{
             document.getElementById('textOutput').innerHTML = "It's Correct &#128512";
             document.getElementById('inputBox').value = "";
+            startNewGame();
         }
     }
     //To tooglee the attempts 
