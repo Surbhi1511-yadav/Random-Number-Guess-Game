@@ -1,7 +1,7 @@
 //To generate a Random Number 
 let computerGuess;
 let userGuess = []; //Empty array
-let audio = new Audio('./audio1.wav');
+let audio = new Audio('./audio2.wav');
 
 const init = () => {
     computerGuess = Math.floor(Math.random() * 100); //We are using *100 to get a number b/w 1-100 and math floor to remove the decimal value after *100
