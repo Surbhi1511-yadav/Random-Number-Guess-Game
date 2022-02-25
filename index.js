@@ -1,7 +1,7 @@
 //To generate a Random Number 
 let computerGuess;
 let userGuess = []; //Empty array
-
+let audio = new Audio('./audio1.wav');
 
 const init = () => {
     computerGuess = Math.floor(Math.random() * 100); //We are using *100 to get a number b/w 1-100 and math floor to remove the decimal value after *100
@@ -27,12 +27,14 @@ const newGameBegin = () =>{
 
 // start new game
 const startNewGame = () => {
+    audio.play();
     document.getElementById("nameGameButton").style.display = "inline";
     document.getElementById("inputBox").disabled = "true";
 }
 
 //main logic of your app : 
 const compareGuess = () => {
+    audio.play();
     const userNumber = Number(document.getElementById("inputBox").value);
     userGuess = [...userGuess, userNumber]; //userGuess for previous entered number and userNumber for recent entered number
     document.getElementById("guesses").innerHTML = userGuess;
@@ -73,12 +75,14 @@ const compareGuess = () => {
 
 
 const easyMode = () => {
+    audio.play();
     //MaxGuess in EasyMode should be 10
     maxGuess = 10;
     startGame();
 };
 
 const hardMode = () => {
+    audio.play();
     //MaxGuess in hardMode should be 5
     maxGuess = 5;
     startGame();
