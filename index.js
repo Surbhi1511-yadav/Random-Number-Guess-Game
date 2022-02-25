@@ -1,7 +1,7 @@
 //To generate a Random Number 
 let computerGuess;
 let userGuess = []; //Empty array
-let userNumberUpdate = document.getElementById('textOutput');
+// let userNumberUpdate = document.getElementById('textOutput');
 
 
 const init = () => {
@@ -29,11 +29,11 @@ const compareGuess = () => {
     
     // Check the value low or high 
     if(userNumber > computerGuess){
-        userNumberUpdate.innerHTML = "High";
+        document.getElementById('textOutput').innerHTML = "Your guess is High &#128550";
     }else if(userNumber < computerGuess){
-        userNumberUpdate.innerHTML = "Low";
+        document.getElementById('textOutput').innerHTML = "Your guess is Low &#128532";
     }else{
-        userNumberUpdate.innerHTML = "Low";
+        document.getElementById('textOutput').innerHTML = "It's Correct &#128512";
     }
 };
 
