@@ -28,9 +28,12 @@ const compareGuess = () => {
     document.getElementById("guesses").innerHTML = userGuess;
     
     // Check the value low or high 
-    if(userNumber > computerGuess)
-    {
-
+    if(userNumber > computerGuess){
+        userNumberUpdate.innerHTML = "High";
+    }else if(userNumber < computerGuess){
+        userNumberUpdate.innerHTML = "Low";
+    }else{
+        userNumberUpdate.innerHTML = "Low";
     }
 };
 
