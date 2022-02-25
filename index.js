@@ -21,6 +21,11 @@ const startGame = () => {
     document.getElementById("gameArea").style.display="block";
 }
 
+// start new game
+const startNewGame = () =>{
+    document.getElementById("nameGameButton").style.display="inline";
+}
+
 //main logic of your app : 
 const compareGuess = () => {
     const userNumber = Number(document.getElementById("inputBox").value);
