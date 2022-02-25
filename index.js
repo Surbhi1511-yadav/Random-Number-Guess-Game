@@ -1,6 +1,7 @@
 //To generate a Random Number 
 let computerGuess;
 let userGuess = []; //Empty array
+let userNumberUpdate = document.getElementById('textOutput');
 
 
 const init = () => {
@@ -26,6 +27,11 @@ const compareGuess = () => {
     userGuess = [ ...userGuess, userNumber]; //userGuess for previous entered number and userNumber for recent entered number
     document.getElementById("guesses").innerHTML = userGuess;
     
+    // Check the value low or high 
+    if(userNumber > computerGuess)
+    {
+
+    }
 };
 
 
