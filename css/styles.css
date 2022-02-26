@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 :root{
+    --dark:rgb(94, 3, 94);
     --background:#ffe9db;
 }
 html{
