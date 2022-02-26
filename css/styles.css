@@ -94,7 +94,7 @@ input{
     background: transparent;
     margin: 2rem 0;
     padding: 2rem 0;
-    width: 20rem;
+    width: 25rem;
     text-align: center;
     font-size: 24px;
     font-family: "Josefin Sans", sans-serif;
@@ -119,23 +119,101 @@ input::placeholder{
 }
 
 /* For Resposiveness  */
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     body{
         width: 100vw;
     }
     main{
         width: 50vw;
-        padding: 2rem;
+        /* height: 80%; */
+        padding: 1rem;
+    }
+    h2{
+        font-size: 12px;
+    }
+    h3{
+        font-size: 12px;
+    }
+    p{
+        font-size: 10px;
+    }
+    button{
+        width: 20px;
+        /* height: 10px; */
+        font-size: 12px;
+        padding: 5px 7px;
+        margin-bottom: 5px;
     }
     input{
-        width: 20rem;
+        width: 15rem;
+        height: 3rem;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 2px;
     }
-    
+    input::placeholder{
+        font-size: 14px;
+    }
+    .info p{
+        font-size: .8rem;
+    }
+    #nameGameButton{
+        font-size: 18px;
+        width: 20px;
+        height: 3px;
+    }
+    .info span{
+        font-size: .8rem;
+        color: #ff0511;
+    }
 }
 
-@media (max-width: 800px)
+@media (max-width: 600px)
 {
     body{
         width: 100vw;
     }
-} */
+    main{
+        width: 70vw;
+        /* height: 80%; */
+        padding: 1rem;
+    }
+    h2{
+        font-size: 12px;
+    }
+    h3{
+        font-size: 12px;
+    }
+    p{
+        font-size: 10px;
+    }
+    button{
+        width: 15px;
+        /* height: 10px; */
+        font-size: 12px;
+        padding: 3px 5px;
+        margin-bottom: 3px;
+    }
+    input{
+        width: 10rem;
+        height: 3rem;
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 2px;
+    }
+    input::placeholder{
+        font-size: 10px;
+    }
+    .info p{
+        font-size: .6rem;
+    }
+    #nameGameButton{
+        font-size: 14px;
+        width: 15px;
+        height: 3px;
+    }
+    .info span{
+        font-size: .6rem;
+        color: #ff0511;
+    }
+}
