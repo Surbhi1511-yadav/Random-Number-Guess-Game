@@ -25,42 +25,41 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 main{
-    width: 30vw;
-    /* height: 70vh; */
+    width: 40vw;
+    /* height: 90%; */
     text-align: center;
     background-color:var(--background);
     border:solid var(--dark);
-    border-width: 0.8rem;
+    border-width: 0.4rem;
     border-radius: 1rem;
-    padding: 80px 50px;
+    padding: 40px 20px;
     color: #1f2933;
 }
 h2{
-    font-size: 2.1rem;
-    margin: 2rem;
+    font-size: 1.5rem;
+    margin: 1rem;
 }
 h3{
-    font-size: 3 rem;
+    font-size: 1.5rem;
 }
 p{
-    font-size: 1.8rem;
+    font-size: 1rem;
 }
 img{
-    width: 90%;
-    max-height: 22rem;
+    width: 60%;
+    /* max-height: 10rem; */
     height: auto;
-    margin: 1rem 0 4rem 0;
+    margin: 1rem 0 2rem 0;
 }
 button{
-    min-width: 28rem;
-    /* background: linear-gradient(45deg, #80FFDB, #5390D9); */
+    min-width: 10rem;
     background: linear-gradient(92.88deg, #5c7cf0 9.16%, #8c7bfa 43.89%, #906bf7 64.72%);
     border-radius: 0.8rem;
     border-style: none;
     color: #ffffff;
     cursor: pointer;
-    padding: 2.5rem 6rem;
-    font-size: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 2rem;
     text-shadow: rgba(0,0,0,0.25) 0 3px 8px;
@@ -88,16 +87,16 @@ button:last-child{
     justify-content: center;
 }
 #newGameButton button{
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 input{
     border: 0.1rem solid lightgray;
     background: transparent;
-    margin: 4rem 0;
+    margin: 2rem 0;
     padding: 2rem 0;
     width: 25rem;
     text-align: center;
-    font-size: 34px;
+    font-size: 24px;
     font-family: "Josefin Sans", sans-serif;
 }
 input::placeholder{
@@ -106,7 +105,7 @@ input::placeholder{
 
 .stats{
     text-align: left;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 .info{
     display: flex;
@@ -115,12 +114,12 @@ input::placeholder{
     margin-top: 3rem;
 }
 .info span{
-    font-size: 2rem;
+    font-size: 1rem;
     color: #ff0511;
 }
 
 /* For Resposiveness  */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     body{
         width: 100vw;
     }
@@ -139,4 +138,4 @@ input::placeholder{
     body{
         width: 100vw;
     }
-}
+} */
